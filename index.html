@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMB Clan | Skillwarz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="video-container">
+
+        <video src="Background.mp4" autoplay muted="true"></video>
+    
+    </div>
+
+
+    <div class="open-header">
+
+        <span class="material-icons-outlined material-icons" onclick="toggleLeftHeader();">
+            menu
+        </span>
+
+    </div>
+    
+    <header class="left-header">
+
+        <div class="close-panel" onclick="toggleLeftHeader();">
+
+            <span class="material-icons-outlined material-icons">
+                close
+            </span>    
+
+        </div>
+
+        <h1 class="title"><span style="color: #C8564A;">Skill</span><span style="color: #4979AA">Warz</span></h1>
+
+        <ul class="header-options">
+
+            <li class="option">Forum</li>
+            <li class="option">Download</li>
+            <li class="option">Clans</li>
+            <li class="option">Leaderboard</li>
+            <li class="option">Sign in</li>
+            <li class="option">Create Account</li>
+            <li class="option browse">
+                <span class="material-icons-outlined material-icons">
+                    search
+                </span>
+
+                <input type="text" name="browse" id="browser" placeholder="Browse...">
+            </li>
+        </ul>
+
+        <div class="socials">
+
+            <img src="Discord.png" alt="" class="social rounded">
+            <img src="Instagram.png" alt="" class="social">
+
+        </div>
+
+    </header>
+
+    <script>
+
+        var leftHeader = document.getElementsByClassName('left-header')[0];
+
+        function toggleLeftHeader()
+        {
+            leftHeader.classList.toggle('open');
+        }
+
+    </script>
+
+</body>
+</html>
