@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OMB Clan | Skillwarz</title>
+    <title>Skillwarz</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +14,13 @@
 </head>
 <body>
 
+    <div class="video-credits">Video recorded by Bnoldea </div>
+
     <div class="video-container">
 
-        <video src="Background.mp4" autoplay muted="true"></video>
+        <video src="./Background.mp4" muted="true" video title="Credits: Nirokyu on youtube" />
     
     </div>
-
 
     <div class="open-header">
 
@@ -28,6 +29,25 @@
         </span>
 
     </div>
+
+    <section class="introduction">
+
+        <h1 class="welcome">Welcome to<br><span style="color: #C8564A;">Skill</span><span style="color: #4979AA">Warz</span></h1>
+
+        <div class="down-arrow-container">
+
+            <span class="material-icons-outlined material-icons">
+                keyboard_arrow_down
+            </span>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        s
+    </section>
     
     <header class="left-header">
 
@@ -70,6 +90,12 @@
     <script>
 
         var leftHeader = document.getElementsByClassName('left-header')[0];
+        var backgroundVideo = document.querySelector('video');
+
+        console.log(backgroundVideo);
+
+        backgroundVideo.playbackRate = 0.5;
+        backgroundVideo.play();
 
         function toggleLeftHeader()
         {
